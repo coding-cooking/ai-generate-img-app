@@ -1,9 +1,4 @@
 import { Image, StyleSheet, Platform, View, Text, ImageBackground, Pressable } from 'react-native';
-
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
 import { Link } from 'expo-router';
 import forestImg from "@/assets/images/forest.jpg"
 
@@ -16,7 +11,7 @@ export default function HomeScreen() {
         resizeMode="cover"
         style={styles.image}
       >
-        <Text style={styles.title}>AI Generate</Text>
+        <Text style={styles.title}>AI Generator</Text>
 
         <Link href="/explore" style={{ marginHorizontal: 'auto' }} asChild>
           <Pressable style={styles.button}>
